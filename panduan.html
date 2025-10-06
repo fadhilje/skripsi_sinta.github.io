@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Perawatan Komprehensif Stoma | StomaCare Indonesia</title>
+    <meta name="description" content="Panduan mendalam tentang jenis stoma, langkah-langkah perawatan harian, tips aktivitas, nutrisi, dan sumber referensi terpercaya.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        // Logic Dark Mode
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+<body class="light-theme">
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">StomaCare Indonesia 💙</h1>
+            <nav>
+                <a href="index.html">Halaman Utama</a>
+                <a href="#informasi-stoma">Panduan</a>
+                <a href="#referensi">Referensi</a>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <p class="breadcrumb"><a href="./index.html">Home</a> / Panduan Komprehensif</p>
+
+        <section class="search-bar-section active-search">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Cari informasi stoma, misalnya: 'kolostomi' atau 'berenang'..."/>
+            </div>
+        </section>
+
+        <section id="informasi-stoma" class="info-section">
+            <h2 class="section-title">Panduan Komprehensif Stoma</h2>
+            <p class="section-subtitle">Pahami semua aspek perawatan dan adaptasi hidup dengan stoma.</p>
+
+            <div class="accordion-item" id="apa-itu-stoma">
+                <div class="accordion-header">
+                    <h3><i class="fas fa-question-circle icon"></i> 1. Apa Itu Stoma?</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Stoma adalah lubang buatan pada perut yang dibuat melalui operasi untuk mengalihkan urine atau feses dari tubuh ke kantong penampung (<i><strong>pouch</strong></i>). Stoma tidak memiliki ujung saraf, sehingga <strong>tidak akan terasa sakit</strong> saat disentuh. Ini adalah jalan baru bagi tubuh Anda untuk berfungsi.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="pembagian">
+                <div class="accordion-header">
+                    <h3><i class="fas fa-boxes icon"></i> 2. Tipe Stoma Utama</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <h4>Tiga Jenis Utama:</h4>
+                    <ul>
+                        <li><strong>Kolostomi:</strong> Dibuat dari usus besar (<i>kolon</i>). Kotorannya biasanya padat atau berbentuk.</li>
+                        <li><strong>Ileostomi:</strong> Dibuat dari usus halus (<i>ileum</i>). Kotorannya biasanya cair atau semi-cair.</li>
+                        <li><strong>Urostomi:</strong> Dibuat untuk mengalihkan urine dari kandung kemih.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="pengobatan">
+                <div class="accordion-header">
+                    <h3><i class="fas fa-kit-medical icon"></i> 3. Panduan Perawatan Harian</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Perawatan stoma melibatkan <strong>kebersihan rutin, penggantian kantong</strong> (yang biasanya 3-7 hari sekali, tergantung jenis kantong), dan <strong>pemantauan kulit</strong> di sekitar stoma. Penting untuk mengukur stoma secara berkala di awal untuk memastikan kantong terpasang sempurna.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="aktivitas">
+                <div class="accordion-header">
+                    <h3><i class="fas fa-person-running icon"></i> 4. Hidup Aktif dengan Stoma</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Memiliki stoma <strong>tidak membatasi sebagian besar aktivitas!</strong> Anda dapat <strong>berolahraga</strong> (setelah mendapat izin dokter), <strong>berenang, bekerja, dan berpergian</strong>. Kunci utamanya adalah memastikan kantong terpasang dengan aman dan membawa perlengkapan cadangan.</p>
+                </div>
+            </div>
+            
+            <div class="accordion-item" id="makanan-baik">
+                <div class="accordion-header">
+                    <h3><i class="fas fa-utensils icon"></i> 5. Nutrisi dan Pola Makan Sehat</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Diet yang baik penting untuk menjaga kesehatan stoma dan mengurangi masalah seperti bau atau gas berlebihan. Prioritaskan makanan yang <strong>mudah dicerna dan kaya cairan</strong> (terutama untuk ileostomi).</p>
+                    <div class="food-tips">
+                        <h4>Tips Makanan:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> <strong>Disarankan:</strong> Pisang, Nasi Putih, Apel (tanpa kulit), Kentang.</li>
+                            <li><i class="fas fa-times-circle"></i> <strong>Batasi:</strong> Sayuran mentah berserat tinggi, kacang-kacangan, minuman bersoda (dapat menyebabkan gas).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="referensi" class="reference-section">
+            <h2 class="section-title">Sumber & Referensi Terpercaya</h2>
+            <p class="section-subtitle">Dapatkan informasi lebih lanjut dari organisasi medis dan panduan terpercaya.</p>
+            
+            <div class="reference-grid">
+                <div class="reference-card">
+                    <i class="fas fa-hospital-user card-icon"></i>
+                    <h4>The Colostomy Association</h4>
+                    <p>Informasi dan dukungan global untuk pasien kolostomi. Sumber terpercaya untuk perawatan harian.</p>
+                    <a href="#" target="_blank" class="card-link">Kunjungi Website <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="reference-card">
+                    <i class="fas fa-book-medical card-icon"></i>
+                    <h4>Jurnal Keperawatan Stoma</h4>
+                    <p>Akses artikel ilmiah dan pedoman klinis terbaru dari asosiasi perawat stoma (ET Nurses).</p>
+                    <a href="#" target="_blank" class="card-link">Baca Lebih Lanjut <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+                <div class="reference-card">
+                    <i class="fas fa-hand-holding-heart card-icon"></i>
+                    <h4>Komunitas Stoma Indonesia</h4>
+                    <p>Forum diskusi dan dukungan sesama pasien di Indonesia. Berbagi pengalaman dan tips praktis.</p>
+                    <a href="#" target="_blank" class="card-link">Bergabung Sekarang <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 StomaCare Indonesia | Dibuat dengan ❤️ untuk edukasi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

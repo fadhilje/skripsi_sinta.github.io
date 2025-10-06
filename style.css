@@ -1,0 +1,407 @@
+/* RESET dan FONT */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #0077b6;
+    --secondary-color: #00b4d8;
+    --success-color: #2a9d8f;
+    --background-light: #f4f8fb;
+    --background-dark: #121212;
+    --text-light: #333;
+    --text-dark: #f0f0f0;
+    --card-light: white;
+    --card-dark: #1e1e1e;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* Fluid Typography Variables */
+    --fs-h2: clamp(1.8rem, 5vw + 0.5rem, 2.5rem);
+    --fs-h3: clamp(1.1rem, 3vw + 0.3rem, 1.3rem);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.4s, color 0.4s;
+    overflow-x: hidden;
+}
+
+/* DARK MODE STYLES */
+.dark-mode {
+    --background-light: var(--background-dark);
+    --text-light: var(--text-dark);
+    --card-light: var(--card-dark);
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- HEADER & NAVIGASI --- */
+.main-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-header nav a {
+    color: white;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.main-header nav a:hover,
+.main-header nav a.active {
+    color: #ade8f4;
+}
+
+.main-header nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ade8f4;
+    border-radius: 1px;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s;
+}
+.theme-toggle:hover {
+    color: #ade8f4;
+}
+
+
+/* --- HERO SECTION --- */
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(135deg, #e0f7fa 0%, #b3e5fc 100%);
+    padding: 80px 50px;
+    margin: 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .hero-section {
+    background: linear-gradient(135deg, #1f2e4b 0%, #171d2b 100%);
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 55%;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content h2 {
+    font-size: var(--fs-h2);
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.hero-content .hero-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+    color: var(--text-light);
+}
+
+.cta-button {
+    background-color: var(--success-color);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #268c7e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- SEARCH BAR PERBAIKAN KRITIS TIPOGRAFI --- */
+.search-bar-section {
+    padding: 0 20px;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-light);
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+}
+
+#search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+    color: var(--text-light);
+    font-family: inherit;
+}
+
+/* KRITIS: Styling Placeholder */
+#search-input::placeholder {
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-note {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+
+/* --- INFORMASI SECTION & ACCORDION --- */
+.info-section {
+    padding-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.accordion-item {
+    background-color: var(--card-light);
+    border-radius: 10px;
+    margin-bottom: 18px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border-left: 5px solid var(--primary-color);
+}
+
+.accordion-header {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header h3 {
+    font-size: var(--fs-h3);
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    border-top: 1px solid #eee;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 600px;
+    padding: 20px;
+}
+
+/* --- REFERENSI --- */
+.breadcrumb {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.reference-section {
+    padding: 50px 0;
+}
+
+.reference-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.reference-card {
+    background-color: var(--card-light);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--success-color);
+}
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+.reference-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+.card-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--success-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.card-link:hover {
+    color: #218838;
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+
+/* --- MEDIA QUERY: PERBAIKAN KRITIS MOBILE (MAX-WIDTH 768px) --- */
+@media (max-width: 768px) {
+    
+    .container {
+        padding: 0 15px;
+    }
+
+    /* HEADER: Penataan Ulang Mobile KRITIS */
+    .main-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-header .logo {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .main-header nav {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .main-header nav a {
+        margin-right: 12px;
+        margin-left: 0;
+        font-size: 0.85rem;
+        flex-shrink: 0;
+    }
+
+    .theme-toggle {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        margin-left: 0;
+    }
+
+    /* HERO SECTION: Susunan Vertikal */
+    .hero-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        margin: 20px auto;
+        gap: 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        order: 2;
+        text-align: left;
+    }
+
+    .hero-content h2, .hero-content .hero-subtitle {
+        text-align: left;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+        order: 1;
+    }
+
+    /* Perbaikan Spacing Global */
+    .section-title, .section-subtitle {
+        padding: 0 5px;
+    }
+
+    /* Referensi */
+    .reference-grid {
+        grid-template-columns: 1fr;
+    }
+}

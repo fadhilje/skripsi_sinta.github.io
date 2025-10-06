@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StomaCare Indonesia | Panduan Stoma Ringkas</title>
+    <meta name="description" content="Halaman utama Panduan StomaCare Indonesia. Akses panduan komprehensif, perawatan, dan nutrisi terbaik untuk hidup berkualitas.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        // Logic Dark Mode
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+</head>
+<body class="light-theme">
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">StomaCare Indonesia 💙</h1>
+            <nav>
+                <a href="./panduan.html">Panduan Lengkap</a> 
+                <a href="#ringkasan-inti">Ringkasan</a>
+                <a href="#makanan-baik">Nutrisi Dasar</a>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Memahami Stoma: Hidup yang Lebih Baik Dimulai dengan Informasi yang Tepat.</h2>
+                <p class="hero-subtitle">Panduan komprehensif, modern, dan mudah dipahami untuk pasien, keluarga, dan tenaga kesehatan.</p>
+                <a href="./panduan.html" class="cta-button">Akses Panduan Perawatan Komprehensif <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section class="search-bar-section">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Cari di Panduan Komprehensif (misalnya: 'ileostomi' atau 'berenang')..."/> 
+            </div>
+             <p class="search-note">Fitur pencarian aktif di halaman <a href="./panduan.html">Panduan Lengkap.</a></p>
+        </section>
+
+        <section id="ringkasan-inti" class="info-section">
+            <h2 class="section-title">Ringkasan Inti</h2>
+            <p class="section-subtitle">Pelajari dasar-dasar stoma dan mulailah perjalanan perawatan Anda hari ini.</p>
+
+            <div class="accordion-item active" id="apa-itu-stoma">
+                <div class="accordion-header">
+                    <h3><i class="fas fa-question-circle icon"></i> 1. Apa Itu Stoma?</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Stoma adalah lubang buatan pada perut yang dibuat melalui operasi untuk mengalihkan urine atau feses dari tubuh. Stoma tidak memiliki ujung saraf, sehingga <strong>tidak akan terasa sakit</strong> saat disentuh. Pahami lebih detail jenis-jenisnya di halaman <a href="./panduan.html#pembagian">Panduan Lengkap</a>.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item" id="makanan-baik">
+                <div class="accordion-header">
+                    <h3><i class="fas fa-utensils icon"></i> 2. Nutrisi Dasar</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Diet yang baik sangat penting. Utamakan makanan <strong>mudah dicerna dan kaya cairan</strong>. Batasi sayuran mentah berserat tinggi. Cek daftar lengkap makanan yang diizinkan dan dibatasi di halaman <a href="./panduan.html#makanan-baik">Panduan Nutrisi</a> kami.</p>
+                </div>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 StomaCare Indonesia | Dibuat dengan ❤️ untuk edukasi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
